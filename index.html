@@ -530,10 +530,10 @@
           </div>
         </a>
       </div>
-      <form class="contact-form" onsubmit="return false;">
-        <input class="form-input" type="text" placeholder="Tu nombre" />
-        <input class="form-input" type="email" placeholder="Tu email" />
-        <textarea class="form-input" rows="5" placeholder="Tu mensaje..."></textarea>
+      <form class="contact-form" action="https://formspree.io/f/xqeyzapa" method="POST">
+        <input class="form-input" type="text" name="name" placeholder="Tu nombre" required />
+        <input class="form-input" type="email" name="email" placeholder="Tu email" required />
+        <textarea class="form-input" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
         <button type="submit" class="btn btn-primary" style="align-self:flex-start">Enviar mensaje →</button>
       </form>
     </div>
